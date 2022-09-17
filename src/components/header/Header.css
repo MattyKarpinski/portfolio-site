@@ -1,0 +1,32 @@
+header{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    
+    align-items: flex-end;
+}
+
+header img {
+    max-height: 113px;
+    
+}
+
+.header__list {
+    display: flex;
+    width: auto;
+}
+
+.header__list li {
+    padding: 0 24px;
+    width: auto;
+}
+
+.header__list a {
+    font-size: 1rem;
+    color: var(--color-primary);
+    width: auto;
+}
