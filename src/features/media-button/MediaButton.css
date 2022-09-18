@@ -1,0 +1,21 @@
+.media-button {
+    width: 72px;
+    height: 82px;
+    background: none;
+    background-image: url(../../assets/triangle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 72px 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.media-button i {
+    font-size: 33px;
+    color:var(--color-primary);
+    width: 33px;
+    height: 33px;
+}

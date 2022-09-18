@@ -1,6 +1,7 @@
 import './Header.css';
 import Logo from '../../assets/logo.svg';
 import CV from '../../assets/Eng-CV-Mateusz-Karpinski.pdf';
+import PrimaryButton from '../../features/primary-button/PrimaryButton';
 
 const Header = () => {
   return (
@@ -27,7 +28,7 @@ const Header = () => {
           </ul>
         </nav>
         <a href={CV} download = 'CV Mateusz Karpiński'>
-          <button className='button__primary'>Download CV</button>
+          <PrimaryButton>Download CV</PrimaryButton>
         </a>
       </header>
     </section>

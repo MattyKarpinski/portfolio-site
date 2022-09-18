@@ -1,28 +1,94 @@
-.hero__info{
+.hero__info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10%;
 }
 
 .hero_info-description {
-    max-width: 832px;
+    width: 832px;
     max-height: 439px;
     background: var(--color-bg2);
-    border-radius: 0 50px 50px 0;
+    border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.hero_info-dev{
-    background-image: url(../../assets/person.webp), linear-gradient(
-  90deg,
-  hsl(183deg 40% 40%) 0%,
-  hsl(176deg 56% 56%) 50%,
-  hsl(169deg 72% 72%) 100%
-    );
-    background-size: auto;
-    height: fit-content;
-    width: 343px;
+.hero_info-description h1 {
+    color: var(--color-secondary);
 }
 
+.hero_info-my-photo {
+    
+    background-image:
+    linear-gradient(to right, 
+        rgba(61, 139, 143, 0.4) 0%,
+        rgba(80, 206, 197, 0.05) 50%,
+        rgba(132, 235, 216, 0.4) 100%
+          ),
+    url('../../assets/person.webp');
+    width: 343px;
+    height: 439px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+
+}
+
+
+
+.hero_info-left-dots {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    background-image: radial-gradient(var(--color-secondary), transparent 40%);
+    background-size: 30px 30px;
+    top: 85%;
+    right: 15%;
+    z-index: -1;
+}
+
+.hero_info-right-dots {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    background-image: radial-gradient(var(--color-secondary), transparent 40%);
+    background-size: 30px 30px;
+    left:85%;
+    bottom: 27%;
+    z-index: -1;
+}
+
+.send-mail {
+    width: 235px;
+    border-radius: 50px;
+}
+
+.hero__media {
+    display: flex;
+    align-items: center;
+}
+
+.xxx {
+    width: 72px;
+    height: 72px;
+    background-image: url(../../assets/triangle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 72px 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 1rem;
+}
+
+.xxx i {
+    font-size: 33px;
+    color:var(--color-primary);
+    width: 33px;
+    height: 33px;
+    
+}
