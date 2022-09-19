@@ -2,21 +2,18 @@
     display: flex;
     justify-content: center;
     gap: 10%;
+    margin: 16px 0;
 }
 
 .hero_info-description {
     width: 832px;
-    max-height: 439px;
+    height: 439px;
     background: var(--color-bg2);
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.hero_info-description h1 {
-    color: var(--color-secondary);
 }
 
 .hero_info-my-photo {
@@ -34,10 +31,7 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50px;
-
 }
-
-
 
 .hero_info-left-dots {
     position: relative;
@@ -62,33 +56,61 @@
 }
 
 .send-mail {
-    width: 235px;
+    width: fit-content;
     border-radius: 50px;
 }
 
 .hero__media {
     display: flex;
     align-items: center;
+    margin: 16px 0;
+    width: fit-content;
 }
 
-.xxx {
-    width: 72px;
-    height: 72px;
-    background-image: url(../../assets/triangle.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 72px 72px;
+.hero__media-buttons {
     display: flex;
-    justify-content: center;
     align-items: center;
-    
-    margin: 1rem;
 }
 
-.xxx i {
-    font-size: 33px;
-    color:var(--color-primary);
-    width: 33px;
-    height: 33px;
+@media screen and (max-width: 1024px) {
+    .hero_info-description {
+        height: 350px;
+    }
     
+    .hero_info-my-photo {
+        height: 350px;
+    }
+    
+    .hero_info-right-dots {
+        left: 75%;
+        bottom: 34%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero_info-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+        width: auto;
+    }
+
+    .hero__media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero__media span {
+        margin-bottom: 16px;
+    }
 }
