@@ -34,7 +34,7 @@ body {
     font-weight: 300;
     background: var(--color-bg1);
     color: var(--color-primary);
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 .container {
@@ -73,18 +73,6 @@ h4 {
     font-size: 2.25rem;
 }
 
-p {
-    font-weight: 300;
-    font-size: 1rem;
-    color: var(--color-primary);
-    text-align: justify;
-    width: auto;
-    height: auto;
-    padding: 16px 0;
-    line-height: 1.7;
-}
-
-
 @media screen and (max-width: 1024px) {
     .container {
         width: var(--conatainer-width-md);
@@ -94,5 +82,21 @@ p {
 @media screen and (max-width: 768px) {
     .container {
         width: var(--conatainer-width-s);
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+    
+    h3 {
+        font-size: 2.5rem;
+    }
+    
+    h4 {
+        font-size: 1.5rem;
     }
 }

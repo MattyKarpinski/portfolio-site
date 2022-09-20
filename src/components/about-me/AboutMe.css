@@ -39,3 +39,13 @@
 .li { grid-area: 3 / 3 / 4 / 5; }
 .li { grid-area: 4 / 3 / 5 / 5; }
 .li { grid-area: 5 / 3 / 6 / 5; }
+
+@media screen and (max-width: 768px) {
+    .about-me__speciality {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+}

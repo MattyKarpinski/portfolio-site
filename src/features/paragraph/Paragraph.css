@@ -1,0 +1,8 @@
+.main-text {
+    font-size: 1rem;
+    color: var(--color-primary);
+    text-align: justify;
+    width: auto;
+    height: auto;
+    padding: 16px 0;
+}

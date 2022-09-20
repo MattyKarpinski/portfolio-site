@@ -1,47 +1,58 @@
-import React from 'react'
-import './AboutMe.css'
+import React from 'react';
+import Paragraph from '../../features/paragraph/Paragraph';
+import './AboutMe.css';
 
 const AboutMe = () => {
   return (
     <section className='about-me'>
       <div className='container'>
         <h2>About me</h2>
-        <p>
+        <Paragraph>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus dolor
            neque, gravida ut dapibus. Auctor amet, sem pellentesque dui, eu
            phasellus cursus dolor in. Velit, donec fermentum amet amet nunc nunc.
-           Nisi placerat mi dolor, etiam posuere sodales.
-        </p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus dolor
+           neque, gravida ut dapibus. Auctor amet, sem pellentesque dui, eu
+           phasellus cursus dolor in. Velit, donec fermentum amet amet nunc nunc.
+        </Paragraph>
+        <Paragraph>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus dolor
+           neque, gravida ut dapibus. Auctor amet, sem pellentesque dui, eu
+           phasellus cursus dolor in. Velit, donec fermentum amet amet nunc nunc.
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus dolor
+           neque, gravida ut dapibus. Auctor amet, sem pellentesque dui, eu
+           phasellus cursus dolor in. Velit, donec fermentum amet amet nunc nunc.
+        </Paragraph>
         <h3>Speciality</h3>
         <ul className='about-me__speciality'>
           <li>
             <div>
               <h4>Lorem ipsum</h4>
-              <p>
+              <Paragraph>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
                 dolor neque, gravida ut dapibus. Auctor amet, sem pellentesque dui,
                 eu phasellus cursus dolor in. 
-              </p>
+              </Paragraph>
             </div>
           </li>
           <li>
           <div>
               <h4>Lorem ipsum</h4>
-              <p>
+              <Paragraph>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
                 dolor neque, gravida ut dapibus. Auctor amet, sem pellentesque dui,
                 eu phasellus cursus dolor in. 
-              </p>
+              </Paragraph>
             </div>
           </li>
           <li>
           <div>
               <h4>Lorem ipsum</h4>
-              <p>
+              <Paragraph>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
                 dolor neque, gravida ut dapibus. Auctor amet, sem pellentesque dui,
                 eu phasellus cursus dolor in. 
-              </p>
+              </Paragraph>
             </div>
           </li>
         </ul>
