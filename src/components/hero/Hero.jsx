@@ -5,17 +5,21 @@ import MediaButton from '../../features/media-button/MediaButton';
 import { AiFillGithub } from 'react-icons/ai';
 import { RiLinkedinLine } from 'react-icons/ri';
 import Paragraph from '../../features/paragraph/Paragraph';
+import LinkCv from '../../features/link-cv/LinkCv';
 
 
 const Hero = () => {
   
   return (
-    <section className='container'>
+    <section className='container hero'>
       <div className='hero__info'>
         <div className='hero_info-description'>
           <h2>Hey there,</h2>
           <h1>I'm Mateusz</h1>
           <Paragraph>I'm Frontened Developer, SEO Specialist and UX Designer</Paragraph>
+          <LinkCv className='hero__CV'>
+            <PrimaryButton>Download CV</PrimaryButton>
+          </LinkCv>
         </div>
         <div className='hero_info-my-photo'>
           <div className='hero_info-left-dots'></div>

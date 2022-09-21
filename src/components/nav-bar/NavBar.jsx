@@ -1,13 +1,15 @@
 
 import { useState } from 'react';
-import './Header.css';
+import './NavBar.css';
 import Logo from '../../assets/logo.svg';
-import CV from '../../assets/Eng-CV-Mateusz-Karpinski.pdf';
 import PrimaryButton from '../../features/primary-button/PrimaryButton';
 import { FaBars } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
+import { NavBarData } from './NavBarData';
+import NavBarItem from './NavBarItem';
+import LinkCv from '../../features/link-cv/LinkCv';
 
-const Header = () => {
+const NavBar = () => {
 
   const [click, setClick] = useState(false);
 
@@ -16,8 +18,8 @@ const Header = () => {
 
 
   return (
-    <section className='container'>
-      <div className='header'>
+    <section className='container xddd'>
+      <div className='nav-bar'>
         <img src={Logo} alt="Logo" />
         <nav>
           <div className='menu__open-section'>
@@ -30,29 +32,21 @@ const Header = () => {
                   <i className='menu__close-icon' onClick={closeMobileMenu}><IoMdClose></IoMdClose></i>
                 </div>
             </li>
-            <li>
-              <a href="#about-me" onClick={closeMobileMenu}>About Me</a>
-            </li>
-            <li>
-              <a href="#projects" onClick={closeMobileMenu}>Projects</a>
-            </li>
-            <li>
-              <a href="#projects" onClick={closeMobileMenu}>Resume</a>
-            </li>
-            <li>
-              <a href="#stack" onClick={closeMobileMenu}>Other</a>
-            </li>
-            <li>
-              <a href="#contact" onClick={closeMobileMenu}>Contact</a>
-            </li>
+
+            {NavBarData.map((item, index) => {
+              return (
+                <NavBarItem data={item} key={index}></NavBarItem>
+              )
+            })}
+
           </ul>
         </nav>
-        <a className='my-cv' href={CV} download = 'CV Mateusz Karpiński'>
-          <PrimaryButton>Download CV</PrimaryButton>
-        </a>
+        <LinkCv className='nav-bar__CV'>
+            <PrimaryButton>Download CV</PrimaryButton>
+        </LinkCv>
       </div>
     </section>
   )
 };
 
-export default Header;
+export default NavBar;

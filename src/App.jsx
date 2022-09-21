@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './components/header/Header';
+import NavBar from './components/nav-bar/NavBar';
 import Hero from './components/hero/Hero';
 import AboutMe from './components/about-me/AboutMe';
 import Projects from './components/projects/Projects';
@@ -10,7 +10,7 @@ import Contact from './components/contact/Contact';
 const App = () => {
   return (
     <>
-      <Header></Header>
+      <NavBar></NavBar>
       <Hero></Hero>
       <AboutMe></AboutMe>
       <Projects></Projects>
