@@ -1,0 +1,7 @@
+#resume {
+    background: var(--color-bg2);
+}
+
+.resume__container {
+    align-items: center;
+}

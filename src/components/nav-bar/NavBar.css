@@ -1,4 +1,8 @@
-.xddd
+#navigation {
+    width: var(--conatainer-width-lg);
+    margin: 0 auto;
+    padding: 16px 0;
+}
 
 .nav-bar {
     height: auto;

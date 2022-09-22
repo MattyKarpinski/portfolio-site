@@ -18,7 +18,7 @@ const NavBar = () => {
 
 
   return (
-    <section className='container xddd'>
+    <section id='navigation'>
       <div className='nav-bar'>
         <img src={Logo} alt="Logo" />
         <nav>
