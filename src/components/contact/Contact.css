@@ -1,0 +1,89 @@
+#contact {
+    background: var(--color-bg2);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__container span{
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+}
+
+.footer__media-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.footer__media-line {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.footer__media-line a{
+    color: var(--color-primary);
+}
+
+.footer__media-line a:hover{
+    color: var(--color-secondary);
+}
+
+.footer__icon {
+    width: 72px;
+    height: 82px;
+    background: none;
+    background-image: url(../../assets/triangle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 72px 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.footer__icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color:var(--color-primary);
+    width: 33px;
+    height: 33px;
+}
+
+.footer__signature {
+    background: var(--color-bg1);
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: var(--color-primary);
+
+}
+
+.footer__signature i {
+    color: var(--color-tertiary);
+}
+
+.footer__signature a {
+    color: var(--color-tertiary);
+    text-decoration: none;
+}
+
+.footer__signature a:hover {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__media-line {
+        gap: 8px;
+    }
+}
