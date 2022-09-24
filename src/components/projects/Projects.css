@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 138px;
+    gap: 15%;
 }
 
 .projects-items__item img {
@@ -41,16 +41,19 @@
     height: 40px;
 }
 
-@media screen and (max-width: 768px) {
-    .projects-items {
-        gap: 32px;
-    }
+@media screen and (max-width: 1024px) {
 
     .projects-items__item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects-items {
         gap: 32px;
     }
 
@@ -60,6 +63,5 @@
         justify-content: center;
         align-items: center;
         gap: 0;
-
     }
 }

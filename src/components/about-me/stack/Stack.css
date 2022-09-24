@@ -1,0 +1,23 @@
+.stack-item {
+    display: flex;
+    align-items: center;
+}
+
+.stack-item__icons {
+    display: flex;
+    align-items: center;
+}
+
+.stack-item__icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .stack-item__icon {
+        width: 20px;
+        height: 20px;
+        margin: 0 8px;
+    }
+}

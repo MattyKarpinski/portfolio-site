@@ -1,46 +1,47 @@
 export const StackItems = [
     {
         name: 'HTML',
-        HTML: '',
+        icon: 'vscode-icons:file-type-html',
     },
     {
         name: 'CSS',
-        icon: '',
+        icon: 'vscode-icons:file-type-css',
     },
     {
         name: 'React',
-        icon: '',
+        icon: 'logos:react',
     },
     {
         name: 'JavaScript',
-        icon: '',
+        icon: 'logos:javascript',
     },
     {
         name: 'TypeScript',
-        icon: '',
+        icon: 'vscode-icons:file-type-typescript-official',
     },
     {
-        name: 'Meterial UI Library',
-        icon: '',
+        name: 'Meterial UI',
+        icon: 'simple-icons:mui',
+        color:'#007fff'
     },
     {
         name: 'VS Code',
-        icon: '',
+        icon: 'vscode-icons:file-type-vscode',
     },
     {
         name: 'Figma',
-        icon: '',
+        icon: 'logos:figma',
     },
     {
         name: 'Adobe XD',
-        icon: '',
+        icon: 'logos:adobe-xd',
     },
     {
         name: 'Adobe Illustrator',
-        icon: '',
+        icon: 'logos:adobe-illustrator',
     },
     {
         name: 'Microsoft Office',
-        icon: '',
+        icon: 'logos:microsoft-icon',
     },
 ]

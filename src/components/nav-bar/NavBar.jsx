@@ -5,9 +5,10 @@ import Logo from '../../assets/logo.svg';
 import PrimaryButton from '../../features/primary-button/PrimaryButton';
 import { FaBars } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
-import { NavBarData } from './NavBarData';
-import NavBarItem from './NavBarItem';
 import LinkCv from '../../features/link-cv/LinkCv';
+import { NavBarData } from './NavBarData';
+
+
 
 const NavBar = () => {
 
@@ -15,7 +16,6 @@ const NavBar = () => {
 
   const openMobileMenu = () => setClick(true);
   const closeMobileMenu = () => setClick(false);
-
 
   return (
     <section id='navigation'>
@@ -33,10 +33,14 @@ const NavBar = () => {
                 </div>
             </li>
 
-            {NavBarData.map((item, index) => {
+            {NavBarData.map((data) => {
               return (
-                <NavBarItem data={item} key={index}></NavBarItem>
-              )
+                <li className={data.cName}>
+                  <a href={data.path} onClick={closeMobileMenu}>
+                    {data.name}
+                  </a>
+                </li>
+              ) 
             })}
 
           </ul>
