@@ -42,6 +42,10 @@
     width: auto;
 }
 
+.nav-menu a:hover {
+    color: var(--color-secondary);
+}
+
 .nav-active {
     display: none;
 }

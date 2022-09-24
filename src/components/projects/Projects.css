@@ -39,6 +39,7 @@
 .projects-items__icon {
     width: 40px;
     height: 40px;
+    margin: 0 0.5rem;
 }
 
 @media screen and (max-width: 1024px) {
