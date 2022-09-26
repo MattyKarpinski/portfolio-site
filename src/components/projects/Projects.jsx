@@ -12,21 +12,20 @@ const Projects = () => {
       <div className='projects__container container'>
         <h2>Projects</h2>
         <Paragraph>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus dolor
-           neque, gravida ut dapibus. Auctor amet, sem pellentesque dui, eu
-           phasellus cursus dolor in. Velit, donec fermentum amet amet nunc nunc.
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus dolor
-           neque, gravida ut dapibus. Auctor amet, sem pellentesque dui, eu
-           phasellus cursus dolor in. Velit, donec fermentum amet amet nunc nunc.
+          Below I would like to present my latest projects. I warmly invite you to take a 
+          closer look at them. Especially for this, the possibility of checking out their
+          full published versions has been added. For the more inquisitive, there is an
+          option to check the source code. In some cases, you can also check out the mockups. 
         </Paragraph>
         <div className='projects-items'>
           <div className='projects-items__item'>
             <img src={FurnitureSite} alt="Furniture site" />
             <div className='projects-items__info'>
               <Paragraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus dolor
-                neque, gravida ut dapibus. Auctor amet, sem pellentesque dui, eu phasellus
-                cursus dolor in.
+                "Furniture-zone" - The project aimed to create a fully functional website designed for business
+                people. In this case it was based on a carpentry business. The site was
+                divided into several thematic tabs presenting the company's offer, including
+                job offers or contact forms.
               </Paragraph>
               <span>Technology:</span>
               <div className='projects-items__info-icons'>
@@ -38,7 +37,7 @@ const Projects = () => {
               </div>
               <div className='projects-items__info-buttons'>
                 <a href="https://furniture-zone.netlify.app/" target='_blank' rel='noreferrer'>
-                  <PrimaryButton>Link</PrimaryButton>
+                  <PrimaryButton>Live</PrimaryButton>
                 </a>
                 <a href="https://github.com/MattyKarpinski/furniture-site" target='_blank' rel='noreferrer'>
                   <PrimaryButton>GitHub</PrimaryButton>
@@ -50,9 +49,9 @@ const Projects = () => {
             <img src={SegreApp} alt="Furniture site" />
             <div className='projects-items__info'>
               <Paragraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus dolor
-                neque, gravida ut dapibus. Auctor amet, sem pellentesque dui, eu phasellus
-                cursus dolor in.
+                "Segre-App" - The project was created by a team as part of completing UX postgraduate studies.
+                 Its aim was to design a digital product based on the problem of waste segregation.
+                 The link also includes the design tools used.
               </Paragraph>
               <span>Technology:</span>
               <div className='projects-items__info-icons'>
@@ -60,7 +59,7 @@ const Projects = () => {
               </div>
               <div className='projects-items__info-buttons'>
                 <a href="https://www.figma.com/file/jYPWNpINaKEj7pbfhpoIqx/Untitled?node-id=0%3A1" target='_blank' rel='noreferrer'>
-                  <PrimaryButton>Link</PrimaryButton>
+                  <PrimaryButton>Mock-up</PrimaryButton>
                 </a>
               </div>
             </div>

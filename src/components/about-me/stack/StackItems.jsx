@@ -20,6 +20,14 @@ export const StackItems = [
         icon: 'vscode-icons:file-type-typescript-official',
     },
     {
+        name: 'NPM',
+        icon: 'vscode-icons:file-type-npm',
+    },
+    {
+        name: 'GIT',
+        icon: 'logos:git-icon',
+    },
+    {
         name: 'Meterial UI',
         icon: 'simple-icons:mui',
         color:'#007fff'
@@ -35,6 +43,10 @@ export const StackItems = [
     {
         name: 'Adobe XD',
         icon: 'logos:adobe-xd',
+    },
+    {
+        name: 'Pen and paper',
+        icon: 'openmoji:writing-hand-light-skin-tone',
     },
     {
         name: 'Adobe Illustrator',
