@@ -13,14 +13,27 @@ import { NavBarData } from './NavBarData';
 const NavBar = () => {
 
   const [click, setClick] = useState(false);
+  const [navBar, setNavBar] = useState(false);
 
   const openMobileMenu = () => setClick(true);
   const closeMobileMenu = () => setClick(false);
 
+  const changeNavBar = () => {
+    if(window.scrollY >= 10) {
+      setNavBar(true)
+    } else {
+      setNavBar(false)
+    }
+  };
+
+  window.addEventListener('scroll', changeNavBar)
+
   return (
-    <section id='navigation'>
-      <div className='nav-bar'>
-        <img src={Logo} alt="Logo" />
+
+      <div className={navBar ? 'navbar active' : 'navbar'}>
+        <a href="/" className='logo'>
+          <img src={Logo} alt="Logo" />
+        </a>
         <nav>
           <div className='menu__open-section'>
             <i onClick={openMobileMenu}><FaBars></FaBars></i>
@@ -49,7 +62,7 @@ const NavBar = () => {
             <PrimaryButton>Download CV</PrimaryButton>
         </LinkCv>
       </div>
-    </section>
+
   )
 };
 
