@@ -13,24 +13,13 @@ import { NavBarData } from './NavBarData';
 const NavBar = () => {
 
   const [click, setClick] = useState(false);
-  const [navBar, setNavBar] = useState(false);
 
   const openMobileMenu = () => setClick(true);
   const closeMobileMenu = () => setClick(false);
 
-  const changeNavBar = () => {
-    if(window.scrollY >= 10) {
-      setNavBar(true)
-    } else {
-      setNavBar(false)
-    }
-  };
-
-  window.addEventListener('scroll', changeNavBar)
-
   return (
 
-      <div className={navBar ? 'navbar active' : 'navbar'}>
+      <div className='navbar'>
         <a href="/" className='logo'>
           <img src={Logo} alt="Logo" />
         </a>

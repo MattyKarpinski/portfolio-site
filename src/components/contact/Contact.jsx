@@ -6,6 +6,8 @@ import { AiFillGithub } from 'react-icons/ai';
 import { RiLinkedinLine } from 'react-icons/ri';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaRegHeart } from "react-icons/fa";
+import PrimaryButton from '../../features/primary-button/PrimaryButton';
+import { Icon } from '@iconify/react';
 
 const Contact = () => {
   return (
@@ -55,6 +57,12 @@ const Contact = () => {
             </a>
           </li>
         </ul>
+        <a href="#top" className='footer__back-to-top' >
+          <PrimaryButton className='footer__button' href="#top">
+            <i><Icon icon="bi:arrow-up-circle-fill"  width="30" height="30"/></i>
+            <span>Back to top</span>
+          </PrimaryButton>
+        </a>
       </footer>
       <div className='footer__signature'>
         <span>Made with <i><FaRegHeart></FaRegHeart></i> by <a href="#">MK</a> 2022</span>

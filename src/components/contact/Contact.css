@@ -58,6 +58,24 @@
     height: 33px;
 }
 
+.footer__back-to-top {
+    transition: 0.8s ease-in;
+}
+
+.footer__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__button i {
+    margin-right: 25px;
+}
+
+.footer__button:hover span {
+    color: var(--color-tertiary);
+}
+
 .footer__signature {
     background: var(--color-bg1);
     height: 63px;

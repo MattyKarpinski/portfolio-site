@@ -7,6 +7,8 @@ import Resume from './components/resume/Resume';
 import OtherInfo from './components/other-info/OtherInfo';
 import Contact from './components/contact/Contact';
 
+
+
 const App = () => {
   return (
     <>
