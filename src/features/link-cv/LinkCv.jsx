@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../assets/Eng-CV-Mateusz-Karpinski.pdf';
+import CV from '../../assets/CV-Mateusz-Karpiński.pdf';
 
 const LinkCv = ({children, className}) => {
 
