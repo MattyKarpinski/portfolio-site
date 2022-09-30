@@ -29,7 +29,7 @@ const Projects = () => {
               </Paragraph>
               <span>Technology:</span>
               <div className='projects-items__info-icons'>
-                <Icon icon="vscode-icons:file-type-typescript-official" className='projects-items__icon'/>
+                <Icon icon="logos:javascript" className='projects-items__icon'/>
                 <Icon icon="logos:react" className='projects-items__icon' />
                 <Icon icon="vscode-icons:file-type-html" className='projects-items__icon' />
                 <Icon icon="vscode-icons:file-type-css" className='projects-items__icon' />

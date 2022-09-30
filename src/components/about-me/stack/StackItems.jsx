@@ -16,10 +16,6 @@ export const StackItems = [
         icon: 'logos:javascript',
     },
     {
-        name: 'TypeScript',
-        icon: 'vscode-icons:file-type-typescript-official',
-    },
-    {
         name: 'NPM',
         icon: 'vscode-icons:file-type-npm',
     },
