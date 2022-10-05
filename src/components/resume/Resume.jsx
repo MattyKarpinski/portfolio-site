@@ -17,11 +17,11 @@ const Resume = () => {
                 </li>
                 <li className='resume-item__line'>
                   <span>10.2020 - 06.2021</span>
-                  <Paragraph>Białystok University of Technology Managment and Production of Engineering, Master degree.</Paragraph>
+                  <Paragraph>SegreApp mobile app design. Project within the postgraduate studies.</Paragraph>
                 </li>
                 <li className='resume-item__line'>
                   <span>09.2017</span>
-                  <Paragraph>Białystok University of Technology Managment and Production of Engineering, Engineer degree.</Paragraph>
+                  <Paragraph>Intern, Production Engineer, AC Spółka Akcyjna, Białystok.</Paragraph>
                 </li>
               </ul>
           </div>
