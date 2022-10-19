@@ -2,7 +2,8 @@ import React from 'react'
 import Paragraph from '../../../features/paragraph/Paragraph'
 
 const styleItem = {
-    maxWidth: '288px',
+    maxWidth: '550px',
+    width: '100%',
     height: 'auto',
     border: '3px solid var(--color-secondary)',
     borderRadius: '50px',
