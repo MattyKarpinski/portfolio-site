@@ -4,9 +4,29 @@ import PrimaryButton from '../../features/primary-button/PrimaryButton';
 import './Projects.css';
 import FurnitureSite from '../../assets/furniture-site-photo.jpg';
 import SegreApp from '../../assets/segre-app-photo.jpg';
+import FlooringConcept from '../../assets/flooring-concept.png';
 import { Icon } from '@iconify/react';
 
 const Projects = () => {
+
+  const combinedStyles = (image) => {
+    const commonStyles = {
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      maxWidth: '290px',
+      width: '100%',
+      height: '300px',
+      borderRadius: '40px',
+      border: '3px solid var(--color-tertiary)',
+    };
+
+    const imageStyle = {
+      backgroundImage: `url(${image})`,
+    };
+
+    return { ...commonStyles, ...imageStyle };
+  };
+
   return (
     <section id='projects'>
       <div className='projects__container container'>
@@ -18,8 +38,34 @@ const Projects = () => {
           option to check the source code. In some cases, you can also check out the mockups. 
         </Paragraph>
         <div className='projects-items'>
+        <div className='projects-items__item'>
+            <div className='project-image' style={combinedStyles(FlooringConcept)}></div>
+            <div className='projects-items__info'>
+              <Paragraph>
+                "Furniture-zone" - The project aimed to create a fully functional website designed for business
+                people. In this case it was based on a carpentry business. The site was
+                divided into several thematic tabs presenting the company's offer, including
+                job offers or contact forms.
+              </Paragraph>
+              <span>Technology:</span>
+              <div className='projects-items__info-icons'>
+                  <Icon icon="ic:baseline-wordpress" className='projects-items__icon'/>
+                  <Icon icon="logos:figma" className='projects-items__icon' />
+                  <Icon icon="vscode-icons:file-type-html" className='projects-items__icon' />
+                  <Icon icon="vscode-icons:file-type-css" className='projects-items__icon' />
+              </div>
+              <div className='projects-items__info-buttons'>
+                <a href="https://flooring-concept.netlify.app/" target='_blank' rel='noreferrer'>
+                  <PrimaryButton>Live</PrimaryButton>
+                </a>
+                <a href="https://github.com/MattyKarpinski/furniture-site" target='_blank' rel='noreferrer'>
+                  <PrimaryButton>Mock-up</PrimaryButton>
+                </a>
+              </div>
+            </div>
+          </div>
           <div className='projects-items__item'>
-            <img src={FurnitureSite} alt="Furniture site" />
+            <div className='project-image' style={combinedStyles(FurnitureSite)}></div>
             <div className='projects-items__info'>
               <Paragraph>
                 "Furniture-zone" - The project aimed to create a fully functional website designed for business
@@ -46,7 +92,7 @@ const Projects = () => {
             </div>
           </div>
           <div className='projects-items__item'>
-            <img src={SegreApp} alt="Furniture site" />
+            <div className='project-image' style={combinedStyles(SegreApp)}></div>
             <div className='projects-items__info'>
               <Paragraph>
                 "Segre-App" - The project was created by a team as part of completing UX postgraduate studies.

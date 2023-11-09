@@ -11,6 +11,10 @@ const Resume = () => {
           <div className='resume-item'>
             <h3>Job experience</h3>
               <ul className='resume-item__list'>
+              <li className='resume-item__line'>
+                  <span>01.2023 - 01.2024</span>
+                  <Paragraph>Junior SEO Specialist SUSO Digital</Paragraph>
+                </li>
                 <li className='resume-item__line'>
                   <span>10.2020 - 07.2022</span>
                   <Paragraph>Junior SEO Specialist WeNet Group S.A.</Paragraph>
