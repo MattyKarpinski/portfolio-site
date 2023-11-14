@@ -42,10 +42,7 @@ const Projects = () => {
             <div className='project-image' style={combinedStyles(FlooringConcept)}></div>
             <div className='projects-items__info'>
               <Paragraph>
-                "Furniture-zone" - The project aimed to create a fully functional website designed for business
-                people. In this case it was based on a carpentry business. The site was
-                divided into several thematic tabs presenting the company's offer, including
-                job offers or contact forms.
+                "Concept Flooring" - A commercial WordPress project seamlessly blending design and functionality. Experience the essence of Concept Flooring's expertise in the flooring industry through a visually captivating and user-friendly platform. A virtual showcase of commercial excellence.
               </Paragraph>
               <span>Technology:</span>
               <div className='projects-items__info-icons'>
@@ -58,7 +55,7 @@ const Projects = () => {
                 <a href="https://flooring-concept.netlify.app/" target='_blank' rel='noreferrer'>
                   <PrimaryButton>Live</PrimaryButton>
                 </a>
-                <a href="https://github.com/MattyKarpinski/furniture-site" target='_blank' rel='noreferrer'>
+                <a href="https://www.figma.com/file/lhY8mM1PjcVLQGTpJ8DoCt/Concept-Flooring?type=design&node-id=0%3A1&mode=design&t=xhGVVagaPgBaH0pr-1" target='_blank' rel='noreferrer'>
                   <PrimaryButton>Mock-up</PrimaryButton>
                 </a>
               </div>
